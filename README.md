@@ -77,10 +77,10 @@ IoT Labs - Farm은 이러한 것들을 수행하고
   1. 참고 : http://deneb21.tistory.com/266
 - 온/습도 센서
 - 광 센서
-- 토양 수분 센서
+- 토양 수분 센서 [#14](https://github.com/iot-labs/farm/issues/14)
   1. 참고 : http://codingrun.com/109
   2. 참고 : https://www.kocoafab.cc/tutorial/view/369
-- 기타 장비 (빵판, 전선, 기타)
+- 기타 장비 (빵판, 전선, 기타) [#15](https://github.com/iot-labs/farm/issues/15)
 
 ### 개발
 - Arduino SDCard Read/Write 개발
