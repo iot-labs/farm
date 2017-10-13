@@ -66,6 +66,11 @@ IoT Labs - Farm은 이러한 것들을 수행하고
 
 ### 사전 조사
 - Device 선정 (Arduino or Raspberry Pi) [#9](https://github.com/iot-labs/farm/issues/9)
+- [아두이노 시뮬레이터](https://circuits.io/lab) 제작
+  - 필요한 Device 를 아두이노 시뮬레이터를 이용해 구성해본다
+  - 장비 구매에 참고 한다
+  - URL : https://circuits.io/lab
+  - 구성한 시뮬레이터 정보도 Github 에 공개하여 공유한다
 
 ### 장비 구매
 
