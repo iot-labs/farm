@@ -28,7 +28,7 @@ IoT Labs : Farm 프로젝트에는 하드웨어/통신/Database/대시보드(Das
 정확한 농업 데이터를 수집하여 시각화 함으로써 정확한 판단을 할 수 있도록 한다.
 농업은 경험주의적 이거나 정밀하지 않은 데이터로 문서화 되어 있다.
 
-다음은 현재 딸기 농사의 적용되고 있는 적정 온도 가이드이다
+다음은 현재 딸기 농사의 적용되고 있는 적정 온도 가이드 이다
 - 촉성재배
   - 적정 온도 : 20~25℃
   - 최고 온도 : 30℃를 넘으면 안된다
@@ -50,15 +50,54 @@ IoT Labs : Farm 프로젝트에는 하드웨어/통신/Database/대시보드(Das
 IoT Labs - Farm은 이러한 것들을 수행하고
 나아가, 우리나라 모든 작물의 최적 환경을 데이터화 하는 것을 목표로 한다.
 
-## 프로젝트 진행
-
-#### 커뮤니케이션
+## 커뮤니케이션
 - Github : https://github.com/iot-labs/farm
 - Facebook : https://www.facebook.com/groups/IoTLabs
 - Slack : iotlabs-team.slack.com
 
+# 프로젝트 개발
+전체 Task를 이곳에 정리 합니다.
+* Device 파트와 Web 파트로 나뉘어 집니다
+* 이곳에서 전체적인 Task를 볼 수 있고,
+* 상세한 내용은 해당하는 Issue 에서 확인 하시기 바랍니다
+  * Task 옆에 Issue 링크가 기록되어 있습니다
 
-## 참여
+## Device 파트
+
+### 사전 조사
+- Device 선정 (Arduino or Raspberry Pi)
+
+### 장비 구매
+
+> 구매할 장비 URL 을 해당 Issue 에 남겨주세요
+> 일괄 구매 하도록 하겠습니다
+
+- Main Device : Arduino 어떤 모델?
+- Arduino SDCard Read/Write
+  1. 참고 : http://deneb21.tistory.com/266
+- 온/습도 센서
+- 광 센서
+- 토양 수분 센서
+  1. 참고 : http://codingrun.com/109
+  2. 참고 : https://www.kocoafab.cc/tutorial/view/369
+- 기타 장비 (빵판, 전선, 기타)
+
+### 개발
+- Arduino SDCard Read/Write 개발
+- 온/습도 센서 개발
+- 광 센서 개발
+- 토양 수분 센서 개발
+
+### 문서화
+- Device 개발 문서화
+- 회로도 작성
+- 설명서를 Github 에 메뉴얼 식으로 작성
+
+## Web 파트
+*(작성중. 13일 초안 작성 예정)*
+
+
+# 프로젝트 참여/기여
 
 ## Issue
 사용 문의 또는 질문 사항들은 [Github 이슈](https://github.com/jongkwang/IoTLabs/issues)에 올려 주시면 바로 처리 해 드리겠습니다.
