@@ -92,7 +92,7 @@ IoT Labs - Farm은 이러한 것들을 수행하고
 - 온/습도 센서 개발
 - 광 센서 개발
 - 토양 수분 센서 개발
-개발 프로토 타입 : [PDF 파일 다운로드](https://github.com/iot-labs/farm/files/1389932/contributon.pdf)
+- 개발 프로토 타입 : [PDF 파일 다운로드](https://github.com/iot-labs/farm/files/1389932/contributon.pdf)
 
 ### 문서화
 - Device 개발 문서화
