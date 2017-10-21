@@ -71,6 +71,7 @@ IoT Labs - Farm은 이러한 것들을 수행하고
   - 장비 구매에 참고 한다
   - URL : https://circuits.io/lab
   - 구성한 시뮬레이터 정보도 Github 에 공개하여 공유한다
+- 1개 Arduino 보드에 모든 센서를 붙일 수 있는가? 없다면 몇개 아두이노가 필요한가?
 
 ### 장비 구매
 
@@ -100,12 +101,29 @@ IoT Labs - Farm은 이러한 것들을 수행하고
 - 설명서를 Github 에 메뉴얼 식으로 작성
 
 ## Web 파트
-*(작성중. 13일 초안 작성 예정)*
-### 서버 세팅
-- Web Server 셋팅 (AWS 또는 다른 클라우드 서버)
-  - Tomcat + Nginx 설치
 
 ### 기술 선정
+- Chart 는 어떤 것으로?
+
+### 서버 세팅
+- Web Server 셋팅
+  - Tomcat + Nginx 설치
+  - Jenkins 설치
+- DB Server 셋팅
+  - MySQL 설치 + 셋팅
+
+### 화면 설계 + Mockup 개발
+- Bootstrap 으로 Mockup 개발
+
+### 화면 개발
+- 기본 Frame 개발
+- 챠트 개발
+
+## DB 파트
+
+### Import
+- SD Card 의 데이터를 MySQL 으로 Import 할 수 있는 기능 개발
+
 
 # 프로젝트 참여/기여
 
