@@ -59,4 +59,52 @@ systemctl start nginx.service
 systemctl status nginx.service
 ```
 
-여기까지 진행하면, 방화벽을 셋팅하고 Ngiux 테스트를 해야 한다.
+여기까지 진행하고, 잠시 setuptool 설정으로 넘어간다.
+**Nginx 추가 설정은 하단에서 이어짐**
+
+## setuptool
+setuptool 에서는 아래 작업을 진행
+- 서비스 자동시작 (Nginx)
+- 방화벽 셋팅
+
+### setuptool 및 방화벽 툴 설치
+```sh
+# setuptool 을 이용하여 방화벽을 설정할 것이다
+# cmd 로 셋팅 할 수 있지만 개인적으로 이것을 선호
+yum install setuptool system-config-securitylevel-tui authconfig system-config-network-tui ntsysv
+```
+
+### setuptool - Nginx 서비스 등록
+서버 부팅 시 자동으로 Nginx 실행 되도록
+```sh
+# setuptool 실행
+setup
+# setup 화면에서
+- System services 메뉴 선택
+- nginx.service 체크
+- 저장 후 종료
+```
+
+### setuptool - 방화벽 설정
+Nginx 서비스를 위해 80 포트 오픈
+```sh
+# setuptool 실행
+setup
+# setup 화면에서
+- Firewall congifuration 선택
+- 만약, Firewall configuration 선택시 에러 발생하면, 하단 참조
+- 셋팅 후 종료
+
+# 변경사항 반영
+systemctl restart iptables
+```
+### Error : setuptool 의 Firewall configuration 에서 에러 발생시
+
+- Error Msg : <code>ERROR: FirewallD is active, please use firewall-cmd.</code>
+
+```sh
+# firewalld 서비스 Stop
+service firewalld stop
+
+# 다시 setup 실행하면 정상작동
+```
