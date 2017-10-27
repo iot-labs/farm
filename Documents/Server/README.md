@@ -34,3 +34,29 @@ yum list installed | grep fastestmirror
 # 설치 방법
 yum install yum-plugin-fastestmirror yum-fastestmirror
 ```
+
+### OS Update
+```sh
+yum update # OS 전체 업데이트
+reboot # 시스템 재부팅. vultr 메뉴얼에는 최초 한번 reboot 하라고 권고하고 있다
+```
+
+## NGINX 설치
+
+### NGINX 설치
+
+> 버전 확인 : https://nginx.org/en/download.html
+```sh
+yum install nginx
+```
+
+### NGINX Start & Status
+```sh
+# Nginx start
+systemctl start nginx.service
+
+# Nginx ststus (상태확인)
+systemctl status nginx.service
+```
+
+여기까지 진행하면, 방화벽을 셋팅하고 Ngiux 테스트를 해야 한다.
