@@ -174,31 +174,61 @@ server {
 ### Nginx reload
 
 ```sh
-service nginx reload
 # restart 하지 않아도 반영된다. (확인함)
+service nginx reload
 ```
 
+### HTTP 테스트
+
+테스트용 index.html 생성
+```sh
+vi /var/www/www.iotlabs.net/index.html
+Hello World
+```
+
+브라우저에서 접속하여 "Hello World" 문구 확인
+- http://www.iotalbs.net
+
+## Let's Encrypt - HTTPS 적용
+
+### Let's Encrypt 설치 및 Nginx 설정
+
+```sh
+# certbot 설치
 yum install certbot
-/etc/nginx/default.d/well-known.conf
+
+# 설정 추가
+vi /etc/nginx/conf.d/www.iotalbs.net.conf
+# 추가할 내용
 location ~ /.well-known {
 	allow all;
 }
-service nginx restart
-certbot certonly -a webroot --webroot-path=/var/www/www.iotlabs.net -d www.iotlabs.net -d iotlabs.net -d farm.iotlabs.net -d dashboard.iotlabs.net -d jenkins.iotlabs.net -d test.iotlabs.net
 
-```sh
-IMPORTANT NOTES:
- - Congratulations! Your certificate and chain have been saved at:
-   /etc/letsencrypt/live/www.iotlabs.net/fullchain.pem
-   Your key file has been saved at:
-   /etc/letsencrypt/live/www.iotlabs.net/privkey.pem
-   Your cert will expire on 2018-02-08. To obtain a new or tweaked
-   version of this certificate in the future, simply run certbot
-   again. To non-interactively renew *all* of your certificates, run
-   "certbot renew"
- - If you like Certbot, please consider supporting our work by:
+# 추가된 모습
+# www.iotlabs.net.conf 파일 내용
+server {
+    listen       80;
+    server_name  iotlabs.net www.iotlabs.net farm.iotlabs.net dashboard.iotlabs.net;
+    client_max_body_size 2000M;
+    fastcgi_read_timeout 600s;
 
-   Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
-   Donating to EFF:                    https://eff.org/donate-le
-```
-openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
+    charset utf-8;
+    access_log  /var/log/nginx/access.www.iotlabs.net.log  main;
+    error_log   /var/log/nginx/error.www.iotlabs.net.log  error;
+
+    location / {
+        root   /var/www/www.iotlabs.net;
+        index  index.html index.jsp;
+    }
+    location ~ /.well-known {
+    	allow all;
+    }
+    #error_page  404              /404.html;
+
+    # redirect server error pages to the static page /50x.html
+    #
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+}
