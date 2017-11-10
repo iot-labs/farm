@@ -62,7 +62,7 @@ systemctl status nginx.service
 여기까지 진행하고, 잠시 setuptool 설정으로 넘어간다.
 **Nginx 추가 설정은 하단에서 이어짐**
 
-## setuptool
+## setuptool & 방화벽
 setuptool 에서는 아래 작업을 진행
 - 서비스 자동시작 (Nginx)
 - 방화벽 셋팅
@@ -85,6 +85,11 @@ setup
 - 저장 후 종료
 ```
 
+또는 Nginx 서비스 등록은 이렇게 해도 된다
+```sh
+systemctl enable nginx # start nginx on boot
+```
+
 ### setuptool - 방화벽 설정
 Nginx 서비스를 위해 80 포트 오픈
 ```sh
@@ -105,6 +110,78 @@ systemctl restart iptables
 ```sh
 # firewalld 서비스 Stop
 service firewalld stop
+# 추가로 부팅시에도 firewalld 작동을 막아야 재부팅후에도 정상 작동.
+systemctl disable nginx # 테스트해보지 않음
 
 # 다시 setup 실행하면 정상작동
+setup
 ```
+
+### 방화벽 열린 것 확인
+```sh
+# CentOS 7.x 의 경우.(아래 2개중 1개 사용)
+iptables -L -n
+iptables -L -vn
+
+# CentOS 6.x 의 경우, 아래 3가기 중 1가지 사용
+netstat -tnlp
+lsof -i -nP | grep LISTEN | awk '{print $(NF-1)" "$1}' | sort -u
+nmap localhost
+```
+
+### 웹서비스 작동되는 것 확인
+
+- 브라우저에서 해당 서버 접속
+ - <code>Welcome to nginx</code> 표시되면 성공
+
+## Nginx 설정
+
+### Nginx에 프로젝트 셋팅
+
+- 웹 Root 위치 : /var/www/www.iotlabs.net
+
+```sh
+# Nginx 설정 파일 생성
+vi /etc/nginx/conf.d/www.iotlabs.net.conf
+
+# www.iotlabs.net.conf 파일 내용
+server {
+    listen       80;
+    server_name  iotlabs.net www.iotlabs.net farm.iotlabs.net dashboard.iotlabs.net;
+    client_max_body_size 2000M;
+    fastcgi_read_timeout 600s;
+
+    charset utf-8;
+    access_log  /var/log/nginx/access.www.iotlabs.net.log  main;
+    error_log   /var/log/nginx/error.www.iotlabs.net.log  error;
+
+    location / {
+        root   /var/www/www.iotlabs.net;
+        index  index.html index.jsp;
+    }
+
+    #error_page  404              /404.html;
+
+    # redirect server error pages to the static page /50x.html
+    #
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+}
+```
+
+### Nginx reload
+
+```sh
+service nginx reload
+# restart 하지 않아도 반영된다. (확인함)
+```
+
+yum install certbot
+/etc/nginx/default.d/well-known.conf
+location ~ /.well-known {
+	allow all;
+}
+service nginx restart
+certbot certonly -a webroot --webroot-path=/var/www/www.iotlabs.net -d www.iotlabs.net -d iotlabs.net -d farm.iotlabs.net -d dashboard.iotlabs.net -d jenkins.iotlabs.net -d test.iotlabs.net
