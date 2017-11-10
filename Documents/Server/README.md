@@ -232,3 +232,38 @@ server {
         root   /usr/share/nginx/html;
     }
 }
+
+# Nginx Restart (reload 는 테스트 안해봤음)
+service nginx restart
+```
+
+### 인증서 획득
+```sh
+# 도메인을 이와같이 여러개 입력한다. Let'sEncrypt 에서는 "*" 도메인을 지원하지 않는다.
+certbot certonly -a webroot --webroot-path=/var/www/www.iotlabs.net -d www.iotlabs.net -d iotlabs.net -d farm.iotlabs.net -d dashboard.iotlabs.net
+
+# 아래와 같은 성공 메세지 확인. 특히, fullchain.pem 과 privkey.pem 경로는 적어둔다
+IMPORTANT NOTES:
+ - Congratulations! Your certificate and chain have been saved at:
+   /etc/letsencrypt/live/www.iotlabs.net/fullchain.pem
+   Your key file has been saved at:
+   /etc/letsencrypt/live/www.iotlabs.net/privkey.pem
+   Your cert will expire on 2018-02-08. To obtain a new or tweaked
+   version of this certificate in the future, simply run certbot
+   again. To non-interactively renew *all* of your certificates, run
+   "certbot renew"
+ - If you like Certbot, please consider supporting our work by:
+
+   Donating to ISRG / Lets Encrypt:   https://letsencrypt.org/donate
+   Donating to EFF:                    https://eff.org/donate-le
+```
+
+### dhparam.pem 생성
+Diffie–Hellman 파라미터라 부르며(줄여서 dhparam) SSL 통신시 암호화를 도와주는 것으로 암호의 복잡도를 높여준다.
+SSL 등급을 측정하는 사이트에서 A등급 이상을 받으려면 필수로 해야 한다.
+
+```sh
+openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
+# 4096 으로 해도 된다 (미확인)
+# PC 사양에 따라 5분에서 10분까지 소요 될 수 있다
+```
