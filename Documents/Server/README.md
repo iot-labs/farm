@@ -328,3 +328,33 @@ server {
     }
 }
 ```
+
+### Nginx 재부팅
+```sh
+# Nginx 설정 테스트
+nginx -t
+
+# Nginx 재시작
+systemctl restart nginx
+```
+
+### https 확인
+브라우저에서 https 로 접속 해본다.
+- URL : https://www.iotlabs.net
+
+### SSL 테스트 사이트
+위와 같이 설정하면 "A+" 등급을 받을 수 있다.
+- https://www.ssllabs.com/ssltest/
+
+## Lets Encrypt 인증서 갱신
+
+인증서가 90일 만료로 매우 짧다.
+반드시 자동 갱신이 되어있어야 유용한다.
+
+```sh
+vi /etc/crontab
+
+# 하단 내용 추가
+20 4 * * 0 /usr/bin/certbot renew >> /var/log/certs-renew.log
+23 4 * * 0 /usr/bin/systemctl reload nginx
+```
