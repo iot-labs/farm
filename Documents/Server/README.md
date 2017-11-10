@@ -267,3 +267,64 @@ openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
 # 4096 으로 해도 된다 (미확인)
 # PC 사양에 따라 5분에서 10분까지 소요 될 수 있다
 ```
+
+### Nginx 에 SSL 설정 적용
+
+```sh
+vi /etc/nginx/conf.d/www.iotlabs.net.conf
+
+# 아래와 같이 변경
+server {
+    server_name iotlabs.net www.iotlabs.net farm.iotlabs.net dashboard.iotlabs.net;
+    return 301 https://$host$request_uri;
+}
+
+server {
+    listen       443 http2 ssl;
+    server_name  iotlabs.net www.iotlabs.net farm.iotlabs.net dashboard.iotlabs.net;
+    client_max_body_size 2000M;
+    fastcgi_read_timeout 600s;
+
+    charset utf-8;
+    access_log  /var/log/nginx/access.www.iotlabs.net.log  main;
+    error_log   /var/log/nginx/error.www.iotlabs.net.log  error;
+
+    # SSL
+    ssl_certificate /etc/letsencrypt/live/www.iotlabs.net/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/www.iotlabs.net/privkey.pem;
+
+    # From https://cipherli.st/
+    ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+    ssl_prefer_server_ciphers on;
+    ssl_ciphers "EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH";
+    ssl_ecdh_curve secp384r1;
+    ssl_session_cache shared:SSL:10m;
+    ssl_session_tickets off;
+    ssl_stapling on;
+    ssl_stapling_verify on;
+    resolver 8.8.8.8 8.8.4.4 valid=300s;
+    resolver_timeout 5s;
+    add_header Strict-Transport-Security "max-age=63072000; includeSubdomains";
+    add_header X-Frame-Options DENY;
+    add_header X-Content-Type-Options nosniff;
+
+    ssl_dhparam /etc/ssl/certs/dhparam.pem;
+
+    location ~ /.well-known {
+            allow all;
+    }
+    location / {
+        root   /var/www/www.iotlabs.net;
+        index  index.html index.jsp;
+    }
+
+    #error_page  404              /404.html;
+
+    # redirect server error pages to the static page /50x.html
+    #
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+}
+```
