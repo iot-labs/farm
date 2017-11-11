@@ -80,15 +80,15 @@ IoT Labs - Farm은 이러한 것들을 수행하고
 > 구매할 장비 URL 을 해당 Issue 에 남겨주세요
 > 일괄 구매 하도록 하겠습니다
 
-- Main Device : Arduino 어떤 모델? [#10](https://github.com/iot-labs/farm/issues/10)
-- Arduino SDCard Read/Write [#11](https://github.com/iot-labs/farm/issues/11)
+- Main Device : Arduino 어떤 모델? [![Issue Status](https://img.shields.io/badge/issue_10-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/10)
+- Arduino SDCard Read/Write [![Issue Status](https://img.shields.io/badge/issue_11-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/11)
   1. 참고 : http://deneb21.tistory.com/266
-- 온/습도 센서 [#12](https://github.com/iot-labs/farm/issues/12)
-- 광 센서 [#13](https://github.com/iot-labs/farm/issues/13)
-- 토양 수분 센서 [#14](https://github.com/iot-labs/farm/issues/14)
+- 온/습도 센서 [![Issue Status](https://img.shields.io/badge/issue_12-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/12)
+- 광 센서 [![Issue Status](https://img.shields.io/badge/issue_13-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/13)
+- 토양 수분 센서 [![Issue Status](https://img.shields.io/badge/issue_14-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/14)
   1. 참고 : http://codingrun.com/109
   2. 참고 : https://www.kocoafab.cc/tutorial/view/369
-- 기타 장비 (빵판, 전선, 기타) [#15](https://github.com/iot-labs/farm/issues/15)
+- 기타 장비 (빵판, 전선, 기타) [![Issue Status](https://img.shields.io/badge/issue_15-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/15)
 
 ### 개발
 - Arduino SDCard Read/Write 개발
