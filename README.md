@@ -69,10 +69,10 @@ IoT Labs - Farm은 이러한 것들을 수행하고
 - [아두이노 시뮬레이터](https://circuits.io/lab) 제작
   - 필요한 Device 를 아두이노 시뮬레이터를 이용해 구성해본다
     - Circuits를 이용하여 온도/습도 측정 개발 - [![Issue Status](https://img.shields.io/badge/issue_26-processing-brightgreen.svg)](https://github.com/iot-labs/farm/issues/26)
-    - Circuits를 이용하여 조도(빛) 측정 개발 - [![Issue Status](https://img.shields.io/badge/issue_27-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/27)
+    - Circuits를 이용하여 조도(빛) 측정 개발 - [![Issue Status](https://img.shields.io/badge/issue_27-processing-brightgreen.svg)](https://github.com/iot-labs/farm/issues/27)
   - 장비 구매에 참고 한다
   - URL : https://www.tinkercad.com/circuits
-  - 구성한 시뮬레이터 정보도 Github 에 공개하여 공유한다 [![Issue Status](https://img.shields.io/badge/issue_26-processing-brightgreen.svg)](https://github.com/iot-labs/farm/issues/26) [![Issue Status](https://img.shields.io/badge/issue_27-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/27)
+  - 구성한 시뮬레이터 정보도 Github 에 공개하여 공유한다 [![Issue Status](https://img.shields.io/badge/issue_26-processing-brightgreen.svg)](https://github.com/iot-labs/farm/issues/26) [![Issue Status](https://img.shields.io/badge/issue_27-processing-brightgreen.svg)](https://github.com/iot-labs/farm/issues/27)
 - 1개 Arduino 보드에 모든 센서를 붙일 수 있는가? 없다면 몇개 아두이노가 필요한가?
 
 ### 장비 구매
