@@ -65,12 +65,14 @@ IoT Labs - Farm은 이러한 것들을 수행하고
 ## Device 파트
 
 ### 사전 조사
-- Device 선정 (Arduino or Raspberry Pi) [#9](https://github.com/iot-labs/farm/issues/9)
+- Device 선정 (Arduino or Raspberry Pi) - Arduino 로 결정됨 [![Issue Status](https://img.shields.io/badge/issue_9-closed-lightgrey.svg)](https://github.com/iot-labs/farm/issues/9)
 - [아두이노 시뮬레이터](https://circuits.io/lab) 제작
   - 필요한 Device 를 아두이노 시뮬레이터를 이용해 구성해본다
+    - Circuits를 이용하여 온도/습도 측정 개발 - [![Issue Status](https://img.shields.io/badge/issue_26-processing-brightgreen.svg)](https://github.com/iot-labs/farm/issues/26)
+    - Circuits를 이용하여 조도(빛) 측정 개발 - [![Issue Status](https://img.shields.io/badge/issue_27-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/27)
   - 장비 구매에 참고 한다
-  - URL : https://circuits.io/lab
-  - 구성한 시뮬레이터 정보도 Github 에 공개하여 공유한다
+  - URL : https://www.tinkercad.com/circuits
+  - 구성한 시뮬레이터 정보도 Github 에 공개하여 공유한다 [![Issue Status](https://img.shields.io/badge/issue_26-processing-brightgreen.svg)](https://github.com/iot-labs/farm/issues/26) [![Issue Status](https://img.shields.io/badge/issue_27-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/27)
 - 1개 Arduino 보드에 모든 센서를 붙일 수 있는가? 없다면 몇개 아두이노가 필요한가?
 
 ### 장비 구매
@@ -90,7 +92,8 @@ IoT Labs - Farm은 이러한 것들을 수행하고
 
 ### 개발
 - Arduino SDCard Read/Write 개발
-- 온/습도 센서 개발
+- LCD Display 출력 개발 [![Issue Status](https://img.shields.io/badge/issue_28-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/28)
+- 온/습도 센서 개발 [![Issue Status](https://img.shields.io/badge/issue_29-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/29)
 - 광 센서 개발
 - 토양 수분 센서 개발
 - 개발 프로토 타입 : [PDF 파일 다운로드](https://github.com/iot-labs/farm/files/1389932/contributon.pdf)
