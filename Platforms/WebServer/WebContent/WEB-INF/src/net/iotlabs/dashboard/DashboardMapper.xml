@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 
+	root 엘리먼트 이름은 mapper입니다. 
+	ibatis에서는 SqlMap이었습니다.
+	namespace는 지정을 해도 되고 안해도 됩니다. ibatis에서는 네임스페이스 사용여부를
+	설정에서 명시적으로 선언해줘야 했지만, myBatis에서는 따로 설정할 필요가 없이, namespace attribute
+	가 없으면 네임스페이스 안쓰는걸로, 있으면 쓰는걸로 자동으로 되는듯 싶습니다.
+-->
+<mapper namespace="DashboardMapper">
+	<!--
+		select 태그를 사용하여 select 쿼리를 만듭니다.
+		parameterType: iBatis의 parameterClass의 역할로 전달 인자의 타입을 선언합니다
+		resultType : iBatis의 resultClass와 같은 역할로 처음 선언했던 Configuration.xml의 
+		typeAlias를 나타냅니다.
+	-->
+	
+	<select id="SelectDailyCondition" resultType="java.util.HashMap" parameterType="java.util.HashMap">
+<![CDATA[
+select round(avg( temperature )) as temperature
+	 , round(avg( humidity )) as humidity
+     , round(avg( fineDust )) as fineDust
+     , DATE_FORMAT(createdDate, '%Y%m') createdDate
+  from dailyCondition
+ where createdDate >= '2017-01-01'
+   and createdDate <= '2017-07-31'
+ group by DATE_FORMAT(createdDate, '%Y%m')
+ order by 4;
+]]>
+	</select>
+	
+	<select id="SelectCardData" resultType="java.util.HashMap" parameterType="java.util.HashMap">
+<![CDATA[
+select seq
+     , temperature
+     , humidity
+     , user
+     , operation
+     , createdDate
+  from cardData
+ order by 1 desc
+ limit 1;
+]]>
+	</select>
+	
+	
+</mapper>
