@@ -95,7 +95,7 @@ IoT Labs - Farm은 이러한 것들을 수행하고
 - Arduino SDCard Read/Write 개발 [![Issue Status](https://img.shields.io/badge/issue_37-processing-brightgreen.svg)](https://github.com/iot-labs/farm/issues/37) 윤재호
 - Arduino Wi-Fi 통신 [![Issue Status](https://img.shields.io/badge/issue_41-processing-brightgreen.svg)](https://github.com/iot-labs/farm/issues/41) Brad.Choi
 - LCD Display 출력 개발 [![Issue Status](https://img.shields.io/badge/issue_28-processing-brightgreen.svg)](https://github.com/iot-labs/farm/issues/28) 정동훈
-- 온/습도 센서 개발 [![Issue Status](https://img.shields.io/badge/issue_29-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/29)
+- 온/습도 센서 개발 [![Issue Status](https://img.shields.io/badge/issue_29-processing-brightgreen.svg)](https://github.com/iot-labs/farm/issues/29) 전태경
 - 광 센서 개발 [![Issue Status](https://img.shields.io/badge/issue_38-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/38)
 - 토양 수분 센서 개발 [![Issue Status](https://img.shields.io/badge/issue_39-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/39)
 - 센서 통합 버전 개발 [![Issue Status](https://img.shields.io/badge/issue_40-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/40)
