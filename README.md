@@ -93,11 +93,12 @@ IoT Labs - Farm은 이러한 것들을 수행하고
 ### 개발
 - Arduino IDE 에 ESP8266 추가 하기 + 문서작업 [![Issue Status](https://img.shields.io/badge/issue_36-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/36)
 - Arduino SDCard Read/Write 개발 [![Issue Status](https://img.shields.io/badge/issue_37-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/37)
+- Arduino Wi-Fi 통신 [![Issue Status](https://img.shields.io/badge/issue_41-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/41)
 - LCD Display 출력 개발 [![Issue Status](https://img.shields.io/badge/issue_28-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/28)
 - 온/습도 센서 개발 [![Issue Status](https://img.shields.io/badge/issue_29-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/29)
-- 광 센서 개발
-- 토양 수분 센서 개발
-- 개발 프로토 타입 : [PDF 파일 다운로드](https://github.com/iot-labs/farm/files/1389932/contributon.pdf)
+- 광 센서 개발 [![Issue Status](https://img.shields.io/badge/issue_38-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/38)
+- 토양 수분 센서 개발 [![Issue Status](https://img.shields.io/badge/issue_39-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/39)
+- 센서 통합 버전 개발 [![Issue Status](https://img.shields.io/badge/issue_40-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/40)
 
 ### 문서화
 - Device 개발 문서화
