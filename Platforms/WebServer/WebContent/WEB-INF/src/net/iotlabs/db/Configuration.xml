@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Valid 한 설정 xml을 만들기 위해 DTD를 추가해 줍니다. -->
+<!DOCTYPE configuration
+	PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!--
+		properties : 해당위치의 properties파일을 참조하여 현재 xml내에서 
+		${name} 으로 값을 사용할 수 있습니다.
+		즉 properties에 선언된 db.properties에 username=xxxxx 라고 설정되어 있으면
+		아래의 <property name="username" value="${username}"/> 부분의 value에 xxxx가
+		치환되어 들어갑니다.
+	-->
+	<properties resource="Db.properties"/>
+	<!--
+		SQL이 선언되어 있는 xml( ibatis에서는 SqlMap이라고 불렀지만, myBatis에서는 
+		mapper 라고 불리고 있습니다)에서 사용할 VO객체의 별명을 붙여 줍니다.
+
+		기존의 ibatis에서는 해당설정이 SqlMap쪽에 존재 했던 반면 myBatis에서는 설정쪽으로
+		이동한 것이 달라진 점이라 하겠네요~^^ 
+	-->
+	<!--
+	<typeAliases>
+		<typeAlias alias="Mybatis" type="net.mybatis.tutorial.vo.MybatisVO"/>
+	</typeAliases>
+	-->
+	<!-- 
+		DB Connection을 맺기 위한 정보들을 입력해 줍니다. ${}는 위에 선언한 properties의 
+		데이터로 치환됩니다.
+
+		이부분에서 보아야 할부분은 dataSource 부분입니다. 지금은 type="POOLED"라고 설정되어
+		있습니다. 이 설정은 Connection pool을 사용하겠다는 뜻입니다.
+		이부분의 설정은 좀더 있지만 나중에 알아보도록 하겠습니다.
+	-->
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="${driver}" />
+				<property name="url" value="${url}" />
+				<property name="username" value="${username}" />
+				<property name="password" value="${password}" />
+				<property name="poolPingQuery" value="select 1"/>
+		        <property name="poolPingEnabled" value="true"/>
+		        <property name="poolPingConnectionsNotUsedFor" value="240000"/>
+			</dataSource>
+		</environment>
+	</environments>
+	<!-- 
+		위에서도 말했듯 mapper.xml은 실질적으로 query문이 선언되어 있는 부분입니다.
+	-->
+	<mappers>
+		<mapper resource="net/iotlabs/dashboard/DashboardMapper.xml" />
+	</mappers>
+</configuration>
