@@ -91,7 +91,8 @@ IoT Labs - Farm은 이러한 것들을 수행하고
 - 기타 장비 (빵판, 전선, 기타) [![Issue Status](https://img.shields.io/badge/issue_15-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/15)
 
 ### 개발
-- Arduino SDCard Read/Write 개발
+- Arduino IDE 에 ESP8266 추가 하기 + 문서작업 [![Issue Status](https://img.shields.io/badge/issue_36-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/36)
+- Arduino SDCard Read/Write 개발 [![Issue Status](https://img.shields.io/badge/issue_37-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/37)
 - LCD Display 출력 개발 [![Issue Status](https://img.shields.io/badge/issue_28-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/28)
 - 온/습도 센서 개발 [![Issue Status](https://img.shields.io/badge/issue_29-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/29)
 - 광 센서 개발
