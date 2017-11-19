@@ -1,4 +1,4 @@
-# IoT Labs - Farm : 농장 데이터 수집 및 분석 서비스
+﻿# IoT Labs - Farm : 농장 데이터 수집 및 분석 서비스
 
 IoT Labs : Farm 프로젝트는 농장의 데이터를 수집하여 분석하는 서비스입니다.
 
@@ -28,7 +28,7 @@ IoT Labs : Farm 프로젝트에는 하드웨어/통신/Database/대시보드(Das
 정확한 농업 데이터를 수집하여 시각화 함으로써 정확한 판단을 할 수 있도록 한다.
 농업은 경험주의적 이거나 정밀하지 않은 데이터로 문서화 되어 있다.
 
-다음은 현재 딸기 농사의 적용되고 있는 적정 온도 가이드 이다
+다음은 현재 딸기 농사의 적용되고 있는 적정 온도 가이드이다
 - 촉성재배
   - 적정 온도 : 20~25℃
   - 최고 온도 : 30℃를 넘으면 안된다
@@ -91,12 +91,12 @@ IoT Labs - Farm은 이러한 것들을 수행하고
 - 기타 장비 (빵판, 전선, 기타) [![Issue Status](https://img.shields.io/badge/issue_15-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/15)
 
 ### 개발
-- Arduino IDE 에 ESP8266 추가 하기 + 문서작업 [![Issue Status](https://img.shields.io/badge/issue_36-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/36)
-- Arduino SDCard Read/Write 개발 [![Issue Status](https://img.shields.io/badge/issue_37-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/37)
-- Arduino Wi-Fi 통신 [![Issue Status](https://img.shields.io/badge/issue_41-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/41)
-- LCD Display 출력 개발 [![Issue Status](https://img.shields.io/badge/issue_28-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/28)
-- 온/습도 센서 개발 [![Issue Status](https://img.shields.io/badge/issue_29-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/29)
-- 광 센서 개발 [![Issue Status](https://img.shields.io/badge/issue_38-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/38)
+- Arduino IDE 에 ESP8266 추가 하기 + 문서작업 [![Issue Status](https://img.shields.io/badge/issue_36-processing-brightgreen.svg)](https://github.com/iot-labs/farm/issues/36) <code>조대영</code>
+- Arduino SDCard Read/Write 개발 [![Issue Status](https://img.shields.io/badge/issue_37-processing-brightgreen.svg)](https://github.com/iot-labs/farm/issues/37) <code>윤재호</code>
+- Arduino Wi-Fi 통신 [![Issue Status](https://img.shields.io/badge/issue_41-processing-brightgreen.svg)](https://github.com/iot-labs/farm/issues/41) <code>Brad.Choi</code>
+- LCD Display 출력 개발 [![Issue Status](https://img.shields.io/badge/issue_28-processing-brightgreen.svg)](https://github.com/iot-labs/farm/issues/28) <code>정동훈</code>
+- 온/습도 센서 개발 [![Issue Status](https://img.shields.io/badge/issue_29-processing-brightgreen.svg)](https://github.com/iot-labs/farm/issues/29) <code>전태경</code>
+- 광 센서 개발 [![Issue Status](https://img.shields.io/badge/issue_38-processing-brightgreen.svg)](https://github.com/iot-labs/farm/issues/38) <code>선해정</code>
 - 토양 수분 센서 개발 [![Issue Status](https://img.shields.io/badge/issue_39-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/39)
 - 센서 통합 버전 개발 [![Issue Status](https://img.shields.io/badge/issue_40-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/40)
 
