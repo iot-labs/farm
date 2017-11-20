@@ -100,7 +100,7 @@ IoT Labs - Farm은 이러한 것들을 수행하고
 - 토양 수분 센서 개발 [![Issue Status](https://img.shields.io/badge/issue_39-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/39)
 - 센서 통합 버전 개발 [![Issue Status](https://img.shields.io/badge/issue_40-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/40)
 
-### 문서화
+### 문서화 <code>한홍근</code>
 - Device 개발 문서화
 - 회로도 작성
 - 설명서를 Github 에 메뉴얼 식으로 작성
