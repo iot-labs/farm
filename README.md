@@ -80,28 +80,28 @@ IoT Labs - Farm은 이러한 것들을 수행하고
 > 구매할 장비 URL 을 해당 Issue 에 남겨주세요
 > 일괄 구매 하도록 하겠습니다
 
-- Main Device : Arduino 어떤 모델? [![Issue Status](https://img.shields.io/badge/issue_10-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/10)
-- Arduino SDCard Read/Write [![Issue Status](https://img.shields.io/badge/issue_11-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/11)
+- Main Device : Arduino 어떤 모델? [![Issue Status](https://img.shields.io/badge/issue_10-closed-lightgrey.svg)](https://github.com/iot-labs/farm/issues/10)
+- Arduino SDCard Read/Write [![Issue Status](https://img.shields.io/badge/issue_11-closed-lightgrey.svg)](https://github.com/iot-labs/farm/issues/11)
   1. 참고 : http://deneb21.tistory.com/266
-- 온/습도 센서 [![Issue Status](https://img.shields.io/badge/issue_12-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/12)
-- 광 센서 [![Issue Status](https://img.shields.io/badge/issue_13-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/13)
-- 토양 수분 센서 [![Issue Status](https://img.shields.io/badge/issue_14-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/14)
+- 온/습도 센서 [![Issue Status](https://img.shields.io/badge/issue_12-closed-lightgrey.svg)](https://github.com/iot-labs/farm/issues/12)
+- 광 센서 [![Issue Status](https://img.shields.io/badge/issue_13-closed-lightgrey.svg)](https://github.com/iot-labs/farm/issues/13)
+- 토양 수분 센서 [![Issue Status](https://img.shields.io/badge/issue_14-closed-lightgrey.svg)](https://github.com/iot-labs/farm/issues/14)
   1. 참고 : http://codingrun.com/109
   2. 참고 : https://www.kocoafab.cc/tutorial/view/369
-- 기타 장비 (빵판, 전선, 기타) [![Issue Status](https://img.shields.io/badge/issue_15-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/15)
+- 기타 장비 (빵판, 전선, 기타) [![Issue Status](https://img.shields.io/badge/issue_15-closed-lightgrey.svg)](https://github.com/iot-labs/farm/issues/15)
 
 ### 개발
-- Arduino IDE 에 ESP8266 추가 하기 + 문서작업 [![Issue Status](https://img.shields.io/badge/issue_36-processing-brightgreen.svg)](https://github.com/iot-labs/farm/issues/36) <code>조대영</code>
-- Arduino SDCard Read/Write 개발 [![Issue Status](https://img.shields.io/badge/issue_37-processing-brightgreen.svg)](https://github.com/iot-labs/farm/issues/37) <code>윤재호</code>
-- Arduino Wi-Fi 통신 [![Issue Status](https://img.shields.io/badge/issue_41-processing-brightgreen.svg)](https://github.com/iot-labs/farm/issues/41) <code>Brad.Choi</code>
-- LCD Display 출력 개발 [![Issue Status](https://img.shields.io/badge/issue_28-processing-brightgreen.svg)](https://github.com/iot-labs/farm/issues/28) <code>정동훈</code>
-- 온/습도 센서 개발 [![Issue Status](https://img.shields.io/badge/issue_29-processing-brightgreen.svg)](https://github.com/iot-labs/farm/issues/29) <code>전태경</code>
-- 광 센서 개발 [![Issue Status](https://img.shields.io/badge/issue_38-processing-brightgreen.svg)](https://github.com/iot-labs/farm/issues/38) <code>선해정</code>
-- 토양 수분 센서 개발 [![Issue Status](https://img.shields.io/badge/issue_39-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/39)
+- Arduino IDE 에 ESP8266 추가 하기 + 문서작업 [![Issue Status](https://img.shields.io/badge/issue_36-closed-lightgrey.svg)](https://github.com/iot-labs/farm/issues/36) <code>조대영</code>
+- Arduino SDCard Read/Write 개발 [![Issue Status](https://img.shields.io/badge/issue_37-closed-lightgrey.svg)](https://github.com/iot-labs/farm/issues/37) <code>윤재호</code>
+- Arduino Wi-Fi 통신 [![Issue Status](https://img.shields.io/badge/issue_41-closed-lightgrey.svg)](https://github.com/iot-labs/farm/issues/41) <code>Brad.Choi</code>
+- LCD Display 출력 개발 [![Issue Status](https://img.shields.io/badge/issue_28-closed-lightgrey.svg)](https://github.com/iot-labs/farm/issues/28) <code>정동훈</code>
+- 온/습도 센서 개발 [![Issue Status](https://img.shields.io/badge/issue_29-closed-lightgrey.svg)](https://github.com/iot-labs/farm/issues/29) <code>전태경</code>
+- 광 센서 개발 [![Issue Status](https://img.shields.io/badge/issue_38-closed-lightgrey.svg)](https://github.com/iot-labs/farm/issues/38) <code>선해정</code>
+- 토양 수분 센서 개발 [![Issue Status](https://img.shields.io/badge/issue_39-closed-lightgrey.svg)](https://github.com/iot-labs/farm/issues/39)
 - 센서 통합 버전 개발 [![Issue Status](https://img.shields.io/badge/issue_40-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/40)
 
-### 문서화 <code>한홍근</code>
-- Device 개발 문서화
+### 문서화
+- Device 개발 문서화 [![Issue Status](https://img.shields.io/badge/issue_45-closed-lightgrey.svg)](https://github.com/iot-labs/farm/issues/45) <code>한홍근</code>
 - 회로도 작성
 - 설명서를 Github 에 메뉴얼 식으로 작성
 
