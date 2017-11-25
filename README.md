@@ -97,7 +97,7 @@ IoT Labs - Farm은 이러한 것들을 수행하고
 - LCD Display 출력 개발 [![Issue Status](https://img.shields.io/badge/issue_28-closed-lightgrey.svg)](https://github.com/iot-labs/farm/issues/28) <code>정동훈</code>
 - 온/습도 센서 개발 [![Issue Status](https://img.shields.io/badge/issue_29-closed-lightgrey.svg)](https://github.com/iot-labs/farm/issues/29) <code>전태경</code>
 - 광 센서 개발 [![Issue Status](https://img.shields.io/badge/issue_38-closed-lightgrey.svg)](https://github.com/iot-labs/farm/issues/38) <code>선해정</code>
-- 토양 수분 센서 개발 [![Issue Status](https://img.shields.io/badge/issue_39-closed-lightgrey.svg)](https://github.com/iot-labs/farm/issues/39)
+- 토양 수분 센서 개발 [![Issue Status](https://img.shields.io/badge/issue_39-closed-lightgrey.svg)](https://github.com/iot-labs/farm/issues/39) <code>조대영</code>
 - 센서 통합 버전 개발 [![Issue Status](https://img.shields.io/badge/issue_40-open-brightgreen.svg)](https://github.com/iot-labs/farm/issues/40)
 
 ### 문서화
