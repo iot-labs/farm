@@ -25,3 +25,6 @@ hs_err_pid*
 .settings/
 .project
 .classpath
+
+# DB properties file. it has a password of db
+Db.properties
