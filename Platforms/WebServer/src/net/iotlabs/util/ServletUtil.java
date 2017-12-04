@@ -71,22 +71,13 @@ public class ServletUtil {
 	    String key	= null;
 	    String value= null;
 	    
-	    System.out.println("================ paramToHashMap [Start] ================");
-	    
 	    while(penum.hasMoreElements())
 	    {
 	        key = (String)penum.nextElement();
 	        
-//	        if( key.equals("dataList") ) {
-//	        	continue;
-//	        }
 	        value = (new String(request.getParameter(key)) == null) ? "" : new String(request.getParameter(key).trim());
-	        System.out.println("[" + key + "] : [" + value + "]");
-	        
 	        param.put(key, value);
 	    }
-	    
-	    System.out.println("================ paramToHashMap [End] ================");
 	    
 	    return param;
 	}
@@ -100,29 +91,18 @@ public class ServletUtil {
 	    String key	= null;
 	    String value= null;
 	    
-	    System.out.println("================ paramToHashMap [Start] ================");
-	    
 	    while(penum.hasMoreElements())
 	    {
 	        key = (String)penum.nextElement();
-	        
-//	        if( key.equals("dataList") ) {
-//	        	continue;
-//	        }
 	        value = (new String(request.getParameter(key)) == null) ? "" : new String(request.getParameter(key).trim());
-	        System.out.println("1[" + key + "] : [" + value + "]");
 	        try {
 	        	value = URLDecoder.decode(value, "UTF-8");
 			} catch (UnsupportedEncodingException e) {
 				e.printStackTrace();
 				value = "## 오류:UTF8 Encoding 이 아닙니다.";
 			}
-	        System.out.println("2[" + key + "] : [" + value + "]");
-	        
 	        param.put(key, value);
 	    }
-	    
-	    System.out.println("================ paramToHashMap [End] ================");
 	    
 	    return param;
 	}
@@ -145,7 +125,6 @@ public class ServletUtil {
 	    if( jsonString == null || jsonString.equals("null") ) {
 	    	jsonString = "{}";
 	    }
-	    System.out.println("### request.getParameter(jsonKey) : " + jsonString);
 	    
 	    // this parses the json
 	    JSONObject jObj = null;
@@ -157,7 +136,6 @@ public class ServletUtil {
 		} 
 	    Iterator it = jObj.keys(); //gets all the keys
 
-	    System.out.println("================ paramToHashMap [Start] ================");
 	    String key = null;
 	    String value = null;
 	    while(it.hasNext())
@@ -169,10 +147,8 @@ public class ServletUtil {
 				e.printStackTrace();
 				throw new ServletException();
 			} // get value
-	        System.out.println(key + " : " +  value); // print the key and value
 	        param.put(key, value);
 	    }
-	    System.out.println("================ paramToHashMap [End] ================");
 	    return param;
 	}
 	
@@ -187,11 +163,6 @@ public class ServletUtil {
 	 */
 	public static void paramToHashMapArray(HttpServletRequest request) throws JSONException
 	{
-		System.out.println("================ Start ================");
-		
 		JSONObject json = new JSONObject(request.getParameter("dataList")); // this parses the json
-		
-		System.out.println(json.toString());
-		
 	}
 }
