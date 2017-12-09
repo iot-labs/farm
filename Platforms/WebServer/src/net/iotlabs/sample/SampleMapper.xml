@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="SampleMapper">
+	
+	<select id="Login" resultType="java.util.HashMap" parameterType="java.util.HashMap">
+<![CDATA[
+select name
+     , email
+  from member
+ where email = #{email}
+   and pw = #{pw}
+]]>
+	</select>
+	
+	<select id="Sample_selectList" resultType="java.util.HashMap" parameterType="java.util.HashMap">
+<![CDATA[
+select something
+  from something
+ where uid = 'testid'
+]]>
+	</select>
+	
+	<insert id="Sample_insertOne" parameterType="java.util.HashMap">
+<![CDATA[
+insert into something (
+   uid
+, something1
+, something2
+) VALUES (
+  'testid'
+, 1
+, 230
+)
+]]>
+	</insert>
+	
+	<update id="Sample_updateSomething" parameterType="java.util.HashMap">
+update member
+   set something = 2300
+ where uid = 'testid';
+	</update>
+	
+	<delete id="Sample_deleteSomething" parameterType="java.util.HashMap">
+delete from something
+ where uid = 'xxxxxxxxx'
+ 	</delete>
+	
+	
+</mapper>
