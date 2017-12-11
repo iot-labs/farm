@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="DashboardMapper">
+	<select id="SelectDailyCondition" resultType="java.util.HashMap" parameterType="java.util.HashMap">
+<![CDATA[
+select round(avg( temperature )) as temperature
+	 , round(avg( humidity )) as humidity
+     , round(avg( fineDust )) as fineDust
+     , DATE_FORMAT(createdDate, '%Y%m') createdDate
+  from dailyCondition
+ where createdDate >= '2017-01-01'
+   and createdDate <= '2017-07-31'
+ group by DATE_FORMAT(createdDate, '%Y%m')
+ order by 4;
+]]>
+	</select>
+	
+	<select id="SelectCardData" resultType="java.util.HashMap" parameterType="java.util.HashMap">
+<![CDATA[
+select seq
+     , temperature
+     , humidity
+     , user
+     , operation
+     , createdDate
+  from cardData
+ order by 1 desc
+ limit 1;
+]]>
+	</select>
+	
+	
+</mapper>
