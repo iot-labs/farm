@@ -31,5 +31,33 @@ select seq
 ]]>
 	</select>
 	
+	<select id="SelectHumidityList" resultType="java.util.HashMap" parameterType="java.util.HashMap">
+<![CDATA[
+select seq
+     , temperature
+     , humidity
+  from cardData
+ order by 1 desc
+]]>
+	</select>
+	
+	<select id="SelectIlluminationList" resultType="java.util.HashMap" parameterType="java.util.HashMap">
+<![CDATA[
+select seq
+     , illumination
+  from cardData
+ order by 1 desc
+]]>
+	</select>
+	
+	<select id="SelectTemperatureList" resultType="java.util.HashMap" parameterType="java.util.HashMap">
+<![CDATA[
+select seq
+     , temperature
+  from cardData
+ order by 1 desc
+]]>
+	</select>
+	
 	
 </mapper>
