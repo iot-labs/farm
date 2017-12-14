@@ -28,3 +28,7 @@ hs_err_pid*
 
 # DB properties file. it has a password of db
 Db.properties
+
+# GNU License Files
+mysql-connector-java-5.1.14-bin.jar
+jxl.jar
