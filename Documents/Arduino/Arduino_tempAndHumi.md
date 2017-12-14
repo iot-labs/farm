@@ -1,11 +1,9 @@
 
-Arduino 온/습도 센서 개발
-==============================
-
 # Arduino 온/습도 센서 개발
 
 
-* Arduino ESP 8266 에 DHT11 센서를 장착하여 온/습도 측정을 가능하게 한다.
+> Arduino ESP 8266 에 DHT11 센서를 장착하여 온/습도 측정을 가능하게 한다.
+
 ## 사용한 DHT11의 경우 아래와 같은 모양을 하고 있다.
 
 ![dht11](https://user-images.githubusercontent.com/22091610/32996536-2d4bad9c-cdc7-11e7-8a5a-83501800f816.png)
@@ -15,19 +13,16 @@ Arduino 온/습도 센서 개발
 
 
 
-## 회로도의 경우 위와 같다.
+## 회로도
 
 ![curcit](https://user-images.githubusercontent.com/22091610/32996882-12c5372c-cdcc-11e7-9dd7-b3ddbf273ba1.png)
 
 * 디지털 2번포트와 데이터 포트가 연결되어 있고, 전원은 3.3V 그리고 GND에 연결되어 있다.
-
 * 이런식으로 연결할 경우 출력으로 습도, 온도(섭씨, 화시), 습도를 고려한 체감온도가 출력되게 된다.
 
-## 코드의 경우 아래와 같다.
+## Code
 
-// Example testing sketch for various DHT humidity/temperature sensors
-// Written by ladyada, public domain
-
+```
 #include "DHT.h"
 
 #define DHTPIN 2     // what digital pin we're connected to
@@ -94,5 +89,5 @@ void loop() {
   Serial.print(hif);
   Serial.println(" *F");
 }
+```
 
-* 이 코드의 경우 DHT11, DHT21, DHT22 겸용이며 위의 코드에서 바꿔주게 될경우 각각의 기기의 대하여 사용할 수 있다.
