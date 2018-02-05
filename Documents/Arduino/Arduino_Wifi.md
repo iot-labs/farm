@@ -1,7 +1,7 @@
 
 ## Arduino Wi-fi
 - Wifi 연결
-- IoT Labs  HTTPS Request 보낸다
+- IoT Labs HTTPS Request 보낸다
 
 
 ### 개요
