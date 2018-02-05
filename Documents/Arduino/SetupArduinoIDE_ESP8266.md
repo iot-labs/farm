@@ -10,7 +10,7 @@
 #### Step 2
 ![2](https://user-images.githubusercontent.com/22044186/32977738-b419f042-cc76-11e7-8756-627af9be6e48.png)
 http://arduino.esp8266.com/stable/package_esp8266com_index.json
-이주소를 입력해준다.
+이 주소를 입력해준다.
 
 #### Step 3
 https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers
@@ -18,10 +18,10 @@ https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vc
 
 #### Step 4
 ![image](https://user-images.githubusercontent.com/22044186/32977951-22e826ca-cc7b-11e7-83ab-9c03b04a7f1e.png)
-
+Windows 버젼에 맞춰 설치파일을 받는다.
 
 #### Step 5
-- windows 비트에 맞게 설치한다.
+- Windows 비트(32bit/64bit)에 맞게 설치한다.
 ![image](https://user-images.githubusercontent.com/22044186/32977955-4bab10d6-cc7b-11e7-8c27-fc6ed44ba747.png)
 
 
