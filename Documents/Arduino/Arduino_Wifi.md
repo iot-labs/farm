@@ -5,7 +5,7 @@
 
 
 ### 개요
- - ESP8266MOD Wi-fi 모듈을 이용하여 웹서버에 센서들로 부터 수집된 데이터를 주기적으로 전송하고, SD카드에 전송한 데이터를 기록한다.
+ - ESP8266MOD Wi-fi 모듈을 이용하여 웹서버에 센서들로부터 수집된 데이터를 주기적으로 전송하고, SD카드에 전송한 데이터를 기록한다.
 
  - URL Test 주소 : https://www.socialq.kr/servlet/util/PrintHeader
  - HTTPs Request 가 성공하면, kim@jongkwang.com 에게 이메일이 실시간 전송됩니다.
