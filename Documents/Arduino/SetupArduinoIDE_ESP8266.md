@@ -1,5 +1,5 @@
 
-# Arduino IDE 에 ESP8266 추가 하기 for Windows
+# Arduino IDE에 ESP8266 추가 하기 for Windows
 
 
 ## 아두이노 ESP8266 설치하기
@@ -10,7 +10,7 @@
 #### Step 2
 ![2](https://user-images.githubusercontent.com/22044186/32977738-b419f042-cc76-11e7-8756-627af9be6e48.png)
 http://arduino.esp8266.com/stable/package_esp8266com_index.json
-이주소를 입력해준다.
+이 주소를 입력해준다.
 
 #### Step 3
 https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers
