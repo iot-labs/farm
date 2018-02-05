@@ -16,7 +16,7 @@ getconf LONG_BIT
 ## 사전 작업
 ### 프롬프트에 절대경로 표시하기
 
-> 개인적으로 Linux 프롬프트에 절대 경로(Full path)가 표시 되는 것을 선호 한다.
+> 개인적으로 Linux 프롬프트에 절대 경로(Full path)가 표시 되는 것을 선호한다.
 
 ```sh
 vi /etc/bashrc
@@ -26,7 +26,7 @@ PS1="[u@h ]..."
 [ "$PS1" = "s-v$ " ] && PS1="[u@h $PWD]$ "
 ```
 ### yum 속도 향상
-> yum-fastestmirror 설치하여 ping 이 빠른 서버 자동으로 찾기
+> yum-fastestmirror 설치하여 ping이 빠른 서버 자동으로 찾기
 
 ```sh
 # 설치여부 확인
@@ -85,7 +85,7 @@ setup
 - 저장 후 종료
 ```
 
-또는 Nginx 서비스 등록은 이렇게 해도 된다
+또는 Nginx 서비스 등록은 이렇게 해도 된다.
 ```sh
 systemctl enable nginx # start nginx on boot
 ```
