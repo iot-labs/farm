@@ -6,7 +6,7 @@
 ---
 ## Arduino, ESP8266 pin mapping(핀 연결)
 
-먼저 ESP 8266과 Arduino을 pin map참고하여 서로 포트에 mapping을 해줘야합니다.
+먼저 ESP 8266과 Arduino를 pin map 참고하여 서로 포트에 mapping을 해줘야 합니다.
 
 - 각 포트들을 기존의 arduino와 mapping을 하여 사용합니다. SD Card 모듈은 ESP 8266과의 연결을 위해 기본적인 GND와 3V 출력 포트, 그리고 직렬 클럭인 SCK, 마스터로부터 입력받는 MOSI, 마스터에게 출력하는 MISO, 칩 셀렉트를 해주는 CS 총 6개의 연결이 필요합니다.
 
