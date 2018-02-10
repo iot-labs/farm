@@ -1,8 +1,8 @@
-
 # Arduino IDE에 ESP8266 추가 하기 for Windows
 
 
-## 아두이노 ESP8266 설치하기
+
+## 아두이노 ESP 8266 설치하기
 
 #### Step 1
 ![1](https://user-images.githubusercontent.com/22044186/32977730-82101b9e-cc76-11e7-863d-a4f567508c29.png)
@@ -31,17 +31,17 @@ https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vc
 
 #### Step 7
 - `[Tools -> Board -> Boards manager]`
-- Boards Manager 창이 뜨면 esp8266 항목에서 최신 버전을 선택하고 `[Install]` 버튼 클릭
+- Boards Manager 창이 뜨면 EPS 8266 항목에서 최신 버전을 선택하고 `[Install]` 버튼 클릭
 ![image](https://user-images.githubusercontent.com/22044186/32977964-9d2513f8-cc7b-11e7-85f1-83ba98faf0f7.png)
 
 
 #### Step 8
-- 보드에 NodeMCU 1.0 버전을 선택한다.
+- 보드에 NODE MCU 1.0 버전을 선택한다.
 ![image](https://user-images.githubusercontent.com/22044186/32978013-91e5146a-cc7c-11e7-979c-01745a71ba13.png)
 
 
 
 #### Step 9
-- `파일 -> 예제 -> ESP8266 Blink`를 실행시킨다.
+- `파일 -> 예제 -> ESP 8266 Blink`를 실행시킨다.
 아두이노에 불빛이 들어오면 성공!
 ![image](https://user-images.githubusercontent.com/22044186/32978022-d1becd42-cc7c-11e7-9a77-0560d491b5f3.png)
