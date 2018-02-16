@@ -27,7 +27,15 @@ void loop()
 }
 </code></pre>
 
-### 회로도
-![image](https://user-images.githubusercontent.com/22341443/32991265-8140e5d0-cd7b-11e7-9951-71d48d8dfcc2.png)
+#### 빛 공급받을때 수치
+![turnon](https://user-images.githubusercontent.com/22341443/33019470-e235bbb4-ce3d-11e7-8cf1-cc786556abbb.PNG)
 
+
+#### 빛을 차단했을때 수치
+![turnoff](https://user-images.githubusercontent.com/22341443/33019522-0f74818c-ce3e-11e7-849c-f6897f18c2a4.PNG)
+
+
+### 회로도
+
+![nodemcu](https://user-images.githubusercontent.com/22341443/33019901-90143034-ce3f-11e7-94e0-016241e9ef1a.PNG)
 
