@@ -310,9 +310,14 @@ server {
 
     ssl_dhparam /etc/ssl/certs/dhparam.pem;
 
-    location ~ /.well-known {
-            allow all;
+    
+    #location ~ /.well-known {
+    #        allow all;
+    #}
+    location ~ ^/.well-known {
+        root /var/www/www.iotlabs.net;
     }
+    
     location / {
         root   /var/www/www.iotlabs.net;
         index  index.html index.jsp;
