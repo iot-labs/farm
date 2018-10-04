@@ -18,10 +18,10 @@ https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vc
 
 #### Step 4
 ![image](https://user-images.githubusercontent.com/22044186/32977951-22e826ca-cc7b-11e7-83ab-9c03b04a7f1e.png)
-
+Windows 버젼에 맞춰 설치파일을 받는다.
 
 #### Step 5
-- windows 비트에 맞게 설치한다.
+- Windows 비트(32bit/64bit)에 맞게 설치한다.
 ![image](https://user-images.githubusercontent.com/22044186/32977955-4bab10d6-cc7b-11e7-8c27-fc6ed44ba747.png)
 
 
